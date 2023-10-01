@@ -1,4 +1,4 @@
-## Liberu - Open Source Ecommerce Software - Nuxt Client
+## Liberu - Open Source Boilerplate Vue 3 and Nuxt 3 - Client
  ![Latest Stable Version](https://img.shields.io/github/release/familytree365/nuxt.svg) 
 [![StyleCI](https://github.styleci.io/repos/399057031/shield?branch=master)](https://github.styleci.io/repos/399057031)
 [![CircleCI](https://circleci.com/gh/liberu-ui/ecommerce.svg?style=svg)](https://circleci.com/gh/liberu-ui/ecommerce)
@@ -20,7 +20,7 @@ Note that most sections have short demo clips.
 
 ### Installation Steps
 
-1. Download the project with `git clone https://github.com/liberu-ui/ecommerce.git --depth 1`
+1. Download the project with `git clone https://github.com/liberu-ui/liberu.git --depth 1`
 
 2. Within the project folder run `yarn install`
 
