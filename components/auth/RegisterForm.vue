@@ -268,9 +268,9 @@ import {
   faLock,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import { focus } from "@enso-ui/directives";
-import Errors from "@enso-ui/laravel-validation";
-import RevealPassword from "@enso-ui/forms/src/bulma/parts/RevealPassword.vue";
+import { focus } from "@liberu-ui/directives";
+import Errors from "@liberu-ui/laravel-validation";
+import RevealPassword from "@liberu-ui/forms/src/bulma/parts/RevealPassword.vue";
 import { $get, $post } from "actions/index.ts";
 
 library.add([faEnvelope, faCheck, faExclamationTriangle, faLock, faUser]);

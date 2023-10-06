@@ -17,18 +17,17 @@
 
 <script>
 import { Fade } from '@liberu-ui/transitions';
-import CoreApp from '~/components/ui/caore/CoreApp.vue';
-import DocumentTitle from '@liberu-ui/ui/core/components/DocumentTitle.vue';
-import Loader from '@liberu-ui/ui/bulma/components/Loader.vue';
-import Auth from '@liberu-ui/auth/bulma/layouts/Auth.vue';
-import Home from '@liberu-ui/bulma/layouts/Home.vue';
-import Default from '@liberu-ui/ui/bulma/layouts/Default.vue';
+import DocumentTitle from '@liberu-ui/ui/src/core/components/DocumentTitle.vue';
+import Loader from '@liberu-ui/ui/src/bulma/components/Loader.vue';
+import Auth from '@liberu-ui/auth/src/bulma/layouts/Auth.vue';
+import Home from '@liberu-ui/ui/src/bulma/layouts/Home.vue';
+import Default from '@liberu-ui/ui/src/bulma/layouts/Default.vue';
 
 export default {
     name: 'Root',
 
     components: {
-        CoreApp, DocumentTitle, Loader, Fade, Auth, Home, Default,
+        DocumentTitle, Loader, Fade, Auth, Home, Default,
     },
 };
 </script>
