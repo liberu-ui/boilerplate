@@ -9,7 +9,7 @@
 <script>
 import { mapState, mapActions } from "pinia";
 import { useMaintStore, useAuthStore, useLayoutStore } from "~/store";
-import Errors from "@enso-ui/laravel-validation";
+import Errors from "@liberu-ui/laravel-validation";
 import RegisterForm from "~/components/auth/RegisterForm.vue";
 // import Email from '~/components/auth/fields/Email.vue';
 // import Password from '~/components/auth/fields/Password.vue';

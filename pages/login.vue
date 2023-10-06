@@ -4,7 +4,7 @@
 <script>
 
 import { mapActions, mapState } from "pinia";
-import Errors from "@enso-ui/laravel-validation";
+import Errors from "@liberu-ui/laravel-validation";
 import { useMaintStore, useAuthStore, useLayoutStore } from "~/store";
 
 import LoginForm from '~/components/auth/LoginForm.vue';
