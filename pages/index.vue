@@ -1,17 +1,16 @@
 <template>
-  <Home/>
+  <Home />
 </template>
 <script setup lang="ts">
-import Home from '~/components/Home';
+// import Home from "~/components/Home";
 
-const name = "index";
+// const name = "index";
 
-const components = { Home };
+// const components = { Home };
 
-definePageMeta({
-  layout: "index",
-});
-
+// definePageMeta({
+//   layout: "index",
+// });
 </script>
 <!-- <router>
 {

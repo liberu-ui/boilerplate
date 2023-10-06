@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import {cloneDeep} from 'lodash';
+import { cloneDeep } from "lodash";
 import getSiteMeta from "./utils/getSiteMeta";
 
 const meta = getSiteMeta();
@@ -47,7 +47,7 @@ export default defineNuxtConfig({
           href: process.env.BASE_URL,
         },
       ],
-    },    
+    },
   },
   runtimeConfig: {
     public: {
@@ -55,7 +55,7 @@ export default defineNuxtConfig({
     },
   },
   alias: {
-    "actions": "../actions"
+    actions: "../actions",
   },
   modules: [
     "@pinia/nuxt",
