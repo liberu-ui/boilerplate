@@ -73,6 +73,7 @@
     "pinia": "^2.1.6",
     "sass": "^1.68.0",
     "vue-chartjs": "^5.2.0",
-    "vue-social-chat": "^1.0.0"
+    "vue-social-chat": "^1.0.0",
+    "@vue-stripe/vue-stripe": "*"
   }
 }
