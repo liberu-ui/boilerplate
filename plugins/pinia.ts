@@ -2,7 +2,9 @@
  * This is a Nuxt.js plugin that provides the pinia stores for the Vue components.
  */
 
+/**
 import { defineNuxtPlugin } from "@nuxtjs/composition-api";
+**/
 import {
   useMaintStore,
   useAuthStore,

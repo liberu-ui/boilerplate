@@ -1,5 +1,5 @@
 import { createApp, App } from 'vue';
-import toastr from '@enso-ui/toastr';
+import toastr from '@liberu-ui/toastr';
 
 const app: App = createApp({});
 
