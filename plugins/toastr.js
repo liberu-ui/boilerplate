@@ -1,5 +1,5 @@
-import { createApp } from 'vue';
-import toastr from '@liberu-ui/toastr';
+import { createApp } from "vue";
+import toastr from "@liberu-ui/toastr";
 
 const app = createApp({});
 

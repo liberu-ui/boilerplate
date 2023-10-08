@@ -1,9 +1,8 @@
 <template>
-    <div class="has-background-white">
-        <Nuxt/>
-    </div>
+  <div class="has-background-white">
+    <Nuxt />
+  </div>
 </template>
 <script>
-export default {
-}
+export default {};
 </script>
