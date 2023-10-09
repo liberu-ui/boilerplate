@@ -58,8 +58,12 @@ export default defineNuxtConfig({
     actions: "../actions",
   },
   modules: [
-    "@pinia/nuxt",
-    // 'nuxt-bulma-slim'
+    [
+      "@pinia/nuxt",
+      {
+        autoImports: ["defineStore", ["defineStore", "definePiniaStore"]],
+      },
+    ],
   ],
   css: [
     "animate.css/animate.compat.css",
@@ -78,13 +82,6 @@ export default defineNuxtConfig({
   //     require('postcss-discard-comments'),
   //     // Add more plugins as needed
   //   ]
-  // },
-  // pinia: {
-  //   autoImports: [
-  //     // automatically imports `defineStore`
-  //     'defineStore', // import { defineStore } from 'pinia'
-  //     ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
-  //   ],
   // },
   // Build Configuration: https://go.nuxtjs.dev/config-build
 

@@ -1,6 +1,4 @@
-import { defineStore } from "pinia";
-
-export const useLayoutStore = defineStore("layout", {
+export const useLayoutStore = defineStore("layoutStore", {
   state: () => ({
     home: true,
     themes: {},
@@ -11,23 +9,23 @@ export const useLayoutStore = defineStore("layout", {
     footer: true,
   }),
   actions: {
-    home(status) {
+    setHome(status: boolean) {
       this.home = status;
     },
-    setThemes(themes) {
-      this.themes = themes;
+    setThemes(newThemes: any) {
+      this.themes = newThemes;
     },
     toggleLights() {
-      this.lightsOff = !state.lightsOff;
+      this.lightsOff = !this.lightsOff;
     },
-    setIsMobile(isMobile) {
-      this.isMobile = isMobile;
+    setIsMobile(isMobileDevice: boolean) {
+      this.isMobile = isMobileDevice;
     },
-    setIsTablet(isTablet) {
-      this.isTablet = isTablet;
+    setIsTablet(isTabletDevice: boolean) {
+      this.isTablet = isTabletDevice;
     },
-    setIsTouch(isTouch) {
-      this.isTouch = isTouch;
+    setIsTouch(isTouchScreenDevice: boolean) {
+      this.isTouch = isTouchScreenDevice;
     },
     hideFooter() {
       this.footer = false;

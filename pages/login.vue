@@ -2,11 +2,7 @@
   <auth-login-form action="Login" route="login" @success="init" />
 </template>
 <script setup lang="ts">
-interface SignInRequestPayload {
-  email: string;
-  password: string;
-  remember: boolean;
-}
+import { SignInRequestPayload } from "~/types/app";
 
 const payload = reactive<SignInRequestPayload>({
   email: "",

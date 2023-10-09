@@ -7,12 +7,7 @@
   <div></div>
 </template>
 <script setup lang="ts">
-interface SignUpRequestPayload {
-  firstname: string;
-  lastname: string;
-  email: string;
-  password: string;
-}
+import { SignUpRequestPayload } from "~/types/app";
 
 const payload = reactive<SignUpRequestPayload>({
   firstname: "",
