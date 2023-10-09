@@ -2,7 +2,13 @@
   <auth-login-form action="Login" route="login" @success="init" />
 </template>
 <script setup lang="ts">
-const payload = reactive({
+interface SignInRequestPayload {
+  email: string;
+  password: string;
+  remember: boolean;
+}
+
+const payload = reactive<SignInRequestPayload>({
   email: "",
   password: "",
   remember: false,
