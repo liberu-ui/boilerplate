@@ -1,11 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import {cloneDeep} from 'lodash';
+import { cloneDeep } from "lodash";
 import getSiteMeta from "./utils/getSiteMeta";
 
 const meta = getSiteMeta();
 
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   // vite: false,
   // builder: 'webpack',
   // env: {
@@ -47,7 +47,7 @@ export default defineNuxtConfig({
           href: process.env.BASE_URL,
         },
       ],
-    },    
+    },
   },
   runtimeConfig: {
     public: {
@@ -55,11 +55,15 @@ export default defineNuxtConfig({
     },
   },
   alias: {
-    "actions": "../actions"
+    actions: "../actions",
   },
   modules: [
-    "@pinia/nuxt",
-    // 'nuxt-bulma-slim'
+    [
+      "@pinia/nuxt",
+      {
+        autoImports: ["defineStore", ["defineStore", "definePiniaStore"]],
+      },
+    ],
   ],
   css: [
     "animate.css/animate.compat.css",
@@ -71,47 +75,13 @@ export default defineNuxtConfig({
     "~/assets/css/fan-chart/svg.css",
     "~/assets/css/fan-chart/fan-chart.css",
   ],
-  plugins: [
-    "~/plugins/action.ts",
-    "~/plugins/pinia.ts",
-    // '~/plugins/bootEnums.js',
-    // '~/plugins/i18n.js',
-    // '~/plugins/pRoute.js',
-    // '~/plugins/filters.js',
-    // '~/plugins/numberFormat.js',
-    // '~/plugins/shortNumber.js',
-    // '~/plugins/toastr.js',
-    // '~/plugins/fontawesome.js',
-    // '~/plugins/themesSettingRegister.js',
-    // '~/plugins/bookmarksSettingRegister.js',
-    // '~/plugins/tutorialSettingRegister.js',
-    // '~/plugins/notificationsRegister.js',
-    // '~/plugins/localisationRegister.js',
-    // '~/plugins/ioRegister.js',
-    // '~/plugins/tasksNavbarRegister.js',
-    // '~/plugins/usersRegister.js',
-    // '~/plugins/validator.js',
-    // '~/plugins/date-fns/format.js',
-    // '~/plugins/date-fns/formatDistance.js',
-    // '~/plugins/vue-select.js',
-    // '~/plugins/vuelidate.js',
-    //'~/plugins/echo.js',
-    // "~/plugins/vue-fb-customer-chat.js",
-    // {src: '~/plugins/vue-stripe.js', ssr: false},
-  ],
+  plugins: [],
   // postcss: {
   //   plugins: [
   //     // List your PostCSS plugins here
   //     require('postcss-discard-comments'),
   //     // Add more plugins as needed
   //   ]
-  // },
-  // pinia: {
-  //   autoImports: [
-  //     // automatically imports `defineStore`
-  //     'defineStore', // import { defineStore } from 'pinia'
-  //     ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
-  //   ],
   // },
   // Build Configuration: https://go.nuxtjs.dev/config-build
 
