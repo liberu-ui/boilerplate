@@ -1,4 +1,4 @@
-import { createApp } from 'vue';
+import { createApp, App } from 'vue';
 import { library, config } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome';
 import {
@@ -56,7 +56,7 @@ library.add(
     faList
 );
 
-const app = createApp({});
+const app: App = createApp({});
 app.component('fa', FontAwesomeIcon);
 app.component('fal', FontAwesomeLayers);
 app.component('falt', FontAwesomeLayersText);
