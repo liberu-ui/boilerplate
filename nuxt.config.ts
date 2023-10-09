@@ -5,7 +5,7 @@ import getSiteMeta from "./utils/getSiteMeta";
 const meta = getSiteMeta();
 
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   // vite: false,
   // builder: 'webpack',
   // env: {
